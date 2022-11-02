@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ying</title>
+    <link rel="stylesheet" href="css/index.css">
     <link
       rel="stylesheet"
       href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css"
@@ -19,6 +20,7 @@
   </head>
   <body class="bg-slate-500	"">
     <!-- Navbar-->
+    <header class="nav-bar">
     <nav
       class="bg-white border-gray-200 px-2 sm:px-4 py-2.5  dark:bg-gray-900"
     >
@@ -79,16 +81,16 @@
               </li>
               <li>
                 <a
-                  href="#"
-                  class="cursor-not-allowed block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
-                  >Earnings</a
+                  href="login.html"
+                  class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                  >Login</a
                 >
               </li>
               <li>
                 <a
-                  href="#"
-                  class="cursor-not-allowed block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
-                  >Sign out</a
+                  href="register.html"
+                  class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                  >Register</a
                 >
               </li>
             </ul>
@@ -121,7 +123,7 @@
           id="mobile-menu-2"
         >
           <ul
-            class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+            class="flex flex-col p-4 mt-4 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0"
           >
             <li>
                 <a
@@ -163,6 +165,9 @@
         </div>
       </div>
     </nav>
+    <div class="scroll-indicator-container">
+      <div class="scroll-indicator-bar"></div>
+  </header>
     <br>
     
     <!-- Staff Part-->
@@ -343,6 +348,7 @@
                     >
                 Ying   
             </a>
+
             <p class="my-6 text-gray-500 dark:text-gray-400">Open-source project that focuses on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
             <ul class="flex flex-wrap justify-center items-center mb-6 text-gray-900 dark:text-white">
                 <li>
@@ -371,5 +377,6 @@
         </div>
       </footer>
   </body>
+  <script src="js/scroll.js"></script>
   <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
 </html>

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ying</title>
+    <link rel="stylesheet" href="css/index.css" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css"
@@ -17,11 +18,10 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="bg-slate-500	"">
+  <body class="bg-slate-500">
     <!-- Navbar-->
-    <nav
-      class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-900"
-    >
+    <header class="nav-bar">
+    <nav class=" border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-900">
       <div
         class="container flex flex-wrap justify-between items-center mx-auto"
       >
@@ -50,7 +50,7 @@
           </button>
           <!-- Dropdown menu -->
           <div
-            class="hidden z-50 my-4 text-base list-none bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600"
+            class="hidden z-50 my-4 text-base list-none   rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600"
             id="user-dropdown"
           >
             <div class="py-3 px-4">
@@ -62,6 +62,7 @@
                 >gjinprelvukaj@ying.com</span
               >
             </div>
+            
             <ul class="py-1" aria-labelledby="user-menu-button">
               <li>
                 <a
@@ -79,16 +80,16 @@
               </li>
               <li>
                 <a
-                  href="#"
-                  class="cursor-not-allowed block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
-                  >Earnings</a
+                  href="login.html"
+                  class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                  >Login</a
                 >
               </li>
               <li>
                 <a
-                  href="#"
-                  class="cursor-not-allowed block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
-                  >Sign out</a
+                  href="register.html"
+                  class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                  >Register</a
                 >
               </li>
             </ul>
@@ -121,7 +122,7 @@
           id="mobile-menu-2"
         >
           <ul
-            class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+            class="flex flex-col p-4 mt-4 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0"
           >
             <li>
               <a
@@ -163,109 +164,132 @@
         </div>
       </div>
     </nav>
-    <div id="toast-top-right" class="flex absolute top-[100px] right-5">
-      <div id="toast-message-cta" class="p-4 w-full max-w-xs text-gray-500 bg-white rounded-lg shadow dark:bg-gray-800 dark:text-gray-400" role="alert">
-        <div class="flex">
-            <img class="w-8 h-8 rounded-full shadow-lg" src="assets/user.png" alt=""/>
-            <div class="ml-3 text-sm font-normal">
-                <span class="mb-1 text-sm font-semibold text-gray-900 dark:text-white">Gjin Prelvukaj</span>
-                <div class="mb-2 text-sm font-normal">Thanks for visiting Ying. Hope you enjoy your stay</div> 
-                <a href="#" class="inline-flex px-2.5 py-1.5 text-xs font-medium text-center text-white bg-blue-600 rounded-lg hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-500 dark:hover:bg-blue-600 dark:focus:ring-blue-800">Reply</a>   
-            </div>
-            <button type="button" class="ml-auto -mx-1.5 -my-1.5 bg-white text-gray-400 hover:text-gray-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-gray-100 inline-flex h-8 w-8 dark:text-gray-500 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700" data-dismiss-target="#toast-message-cta" aria-label="Close">
-                <span class="sr-only">Close</span>
-                <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-            </button>
-        </div>
-    </div>
-  </div>
-  <br>
-    <center><h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">We invest in the world’s potential</h1>
-    <p class="mb-6 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-white">Here at Ying we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
-    <a href="about.html" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
-    Learn more
-    <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-</a></center>
+    <div class="scroll-indicator-container">
+      <div class="scroll-indicator-bar"></div>
+  </header>
 
-    <br>
-    <div class="flex justify-center">
-    <div class="w-full max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
-      <div class="flex justify-end px-4 pt-4">
-          <button id="dropdownButton" data-dropdown-toggle="dropdown" class="inline-block text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-1.5" type="button">
-              <span class="sr-only">Open dropdown</span>
-              <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z"></path></svg>
+    </div>
+    <br >
+    <center>
+      <h1 style="margin-top: 75px;"
+        class="text-8xl mb-4 font-extrabold tracking-tight leading-none text-gray-900 dark:text-white reveal"
+      >
+        <div class="logo"><b>Y<span>i</span>n<span>g</div>
+      </h1>
+      <br>
+      <p
+        class="mb-6 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-white reveal"
+      >
+        Here at Ying we focus on markets where technology, innovation, and
+        capital can unlock long-term value and drive economic growth.
+      </p>
+      <a
+        href="about.html"
+        class="reveal inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
+      >
+        Learn more
+        <svg
+          class="ml-2 -mr-1 w-5 h-5"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </a>
+    </center>
+
+    <br />
+    <div class="flex justify-center reveal">
+      <div
+        class="w-full max-w-sm   rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"
+      >
+        <div class="flex justify-end px-4 pt-4">
+          <button
+            id="dropdownButton"
+            data-dropdown-toggle="dropdown"
+            class="inline-block text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-1.5"
+            type="button"
+          >
+            <span class="sr-only">Open dropdown</span>
+            <svg
+              class="w-6 h-6"
+              aria-hidden="true"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z"
+              ></path>
+            </svg>
           </button>
           <!-- Dropdown menu -->
-          <div id="dropdown" class="hidden z-10 w-44 text-base list-none bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700">
-              <ul class="py-1" aria-labelledby="dropdownButton">
+          <div
+            id="dropdown"
+            class="hidden z-10 w-44 text-base list-none   rounded divide-y divide-gray-100 shadow dark:bg-gray-700"
+          >
+            <ul class="py-1" aria-labelledby="dropdownButton">
               <li>
-                  <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Edit</a>
+                <a
+                  href="#"
+                  class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                  >Edit</a
+                >
               </li>
               <li>
-                  <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Export Data</a>
+                <a
+                  href="#"
+                  class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                  >Export Data</a
+                >
               </li>
               <li>
-                  <a href="#" class="block py-2 px-4 text-sm text-red-600 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Delete</a>
+                <a
+                  href="#"
+                  class="block py-2 px-4 text-sm text-red-600 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                  >Delete</a
+                >
               </li>
-              </ul>
+            </ul>
           </div>
-      </div>
-      <div class="flex flex-col items-center pb-10">
-          <img class="mb-3 w-24 h-24 rounded-full shadow-lg" src="assets/user.png" alt="Bonnie image"/>
-          <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">Gjin Prelvukaj</h5>
-          <span class="text-sm text-gray-500 dark:text-gray-400">Full Stack Developer</span>
+        </div>
+        <div class="flex flex-col items-center pb-10">
+          <img
+            class="mb-3 w-24 h-24 rounded-full shadow-lg"
+            src="assets/user.png"
+            alt="Bonnie image"
+          />
+          <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">
+            Gjin Prelvukaj
+          </h5>
+          <span class="text-sm text-gray-500 dark:text-gray-400"
+            >Full Stack Developer</span
+          >
           <div class="flex mt-4 space-x-3 md:mt-6">
-              <a href="maintenance.html" class="inline-flex items-center py-2 px-4 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Edit Profile</a>
-              <a href="maintenance.html" class="inline-flex items-center py-2 px-4 text-sm font-medium text-center text-gray-900 bg-white rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 dark:focus:ring-gray-700">Inbox</a>
+            <a
+              href="maintenance.html"
+              class="inline-flex items-center py-2 px-4 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >View User</a
+            >
+            <a
+              href="maintenance.html"
+              class="inline-flex items-center py-2 px-4 text-sm font-medium text-center text-gray-900   rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 dark:focus:ring-gray-700"
+              >Inbox</a
+            >
           </div>
+        </div>
       </div>
-  </div>
-</div>
+    </div>
     <!-- Sidebar here -->
     <br />
-    
-    
-<!-- drawer init and show -->
-<div class="text-center">
-  <!-- drawer init and show -->
-<div class="text-center">
-  <button data-popover-target="popover-default" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800" type="button" data-drawer-target="drawer-contact" data-drawer-show="drawer-contact" aria-controls="drawer-contact">
-  Contact Us
-  </button>
-  
-</div>
 
-<!-- drawer component -->
-<div id="drawer-contact" class="fixed z-40 h-screen p-4 overflow-y-auto bg-white w-80 dark:bg-gray-800" tabindex="-1" aria-labelledby="drawer-contact-label">
-  <h5 id="drawer-label" class="inline-flex items-center mb-6 text-base font-semibold text-gray-500 uppercase dark:text-gray-400"><svg class="w-5 h-5 mr-2" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>Contact us</h5>
-  <button type="button" data-drawer-dismiss="drawer-contact" aria-controls="drawer-contact" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 absolute top-2.5 right-2.5 inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" >
-     <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-     <span class="sr-only">Close menu</span>
-  </button>
-  <form action="#" class="mb-6">
-     <div class="mb-6">
-        <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
-        <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@company.com" required>
-     </div>
-     <div class="mb-6">
-        <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
-        <input type="text" id="subject" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Let us know how we can help you" required>
-     </div>
-     <div class="mb-6">
-        <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
-        <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Your message..."></textarea>
-     </div>
-     <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 w-full focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 block">Send message</button>
-  </form>
-  <p class="mb-2 text-sm text-gray-500 dark:text-gray-400">
-     <a href="#" class="hover:underline">gjinprelvukaj@ying.com</a>
-  </p>
-  <p class="text-sm text-gray-500 dark:text-gray-400">
-     <a href="#" class="hover:underline">+(383)49-312-327</a>
-  </p>
-</div>
-</div>
-    
+    <!-- drawer init and show -->
+
     <br />
     <!-- Timeline -->
     <div class="flex justify-center">
@@ -380,74 +404,158 @@
         </li>
       </ol>
     </div>
-    <br>
-    <section class="bg-white dark:bg-[#64748B]">
-      
-      <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
-          <div class="font-light text-gray-500 sm:text-lg dark:text-[#FFFFFF]">
-              <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">We didn't reinvent the wheel</h2>
-              <p class="mb-4">We are strategists, designers and developers. Innovators and problem solvers. Small enough to be simple and quick, but big enough to deliver the scope you want at the pace you need. Small enough to be simple and quick, but big enough to deliver the scope you want at the pace you need.</p>
-              <p>We are strategists, designers and developers. Innovators and problem solvers. Small enough to be simple and quick.</p>
-          </div>
-          <div class="grid grid-cols-2 gap-4 mt-8">
-              <img class="w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-2.png" alt="office content 1">
-              <img class="mt-4 w-full lg:mt-10 rounded-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-1.png" alt="office content 2">
-          </div>
-      </div>
-  </section>
-  <section class="bg-white dark:bg-[#64748B] ">
-    <div class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
-        <img class="w-full dark:hidden" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup.svg" alt="dashboard image">
-        <img class="w-full hidden dark:block" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup-dark.svg" alt="dashboard image">
-        <div class="mt-4 md:mt-0">
-            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Let's create more tools and ideas that brings us together.</h2>
-            <p class="mb-6 font-light text-gray-500 md:text-lg dark:text-[#FFFFFF]">Flowbite helps you connect with friends and communities of people who share your interests. Connecting with your friends and family as well as discovering new ones is easy with features like Groups.</p>
-            <a href="pricing.html" class="inline-flex items-center text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900">
-                Get started
-                <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-            </a>
+
+    <br />
+    <section class="  dark:bg-[#64748B] reveal">
+      <div
+        class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6"
+      >
+        <div class="font-light text-gray-500 sm:text-lg dark:text-[#FFFFFF]">
+          <h2
+            class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
+          >
+            We didn't reinvent the wheel
+          </h2>
+          <p class="mb-4">
+            We are strategists, designers and developers. Innovators and problem
+            solvers. Small enough to be simple and quick, but big enough to
+            deliver the scope you want at the pace you need. Small enough to be
+            simple and quick, but big enough to deliver the scope you want at
+            the pace you need.
+          </p>
+          <p>
+            We are strategists, designers and developers. Innovators and problem
+            solvers. Small enough to be simple and quick.
+          </p>
         </div>
-    </div>
-</section>
-    <!-- Add before footer so it stays on bottom-->
-    <footer class="p-4 bg-white md:p-8 lg:p-10 dark:bg-gray-800">
-      <div class="mx-auto max-w-screen-xl text-center">
-          <a href="#" class="flex justify-center items-center text-2xl font-semibold text-gray-900 dark:text-white">
-                  <img src="assets/logo.png" class="mr-3 h-6 sm:h-9" alt="Ting Logo" />
-                  <span
-                    class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"
-                    ></span
-                  >
-              Ying   
+        <div class="grid grid-cols-2 gap-4 mt-8">
+          <img
+            class="w-full rounded-lg"
+            src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-2.png"
+            alt="office content 1"
+          />
+          <img
+            class="mt-4 w-full lg:mt-10 rounded-lg"
+            src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-1.png"
+            alt="office content 2"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="  dark:bg-[#64748B] reveal">
+      <div
+        class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6"
+      >
+        <img
+          class="w-full dark:hidden"
+          src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup.svg"
+          alt="dashboard image"
+        />
+        <img
+          class="w-full hidden dark:block"
+          src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup-dark.svg"
+          alt="dashboard image"
+        />
+        <div class="mt-4 md:mt-0">
+          <h2
+            class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
+          >
+            Let's create more tools and ideas that brings us together.
+          </h2>
+          <p
+            class="mb-6 font-light text-gray-500 md:text-lg dark:text-[#FFFFFF]"
+          >
+            Ying helps you connect with friends and communities of people who
+            share your interests. Connecting with your friends and family as
+            well as discovering new ones is easy with features like Groups.
+          </p>
+          <a
+            href="pricing.html"
+            class="inline-flex items-center text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900"
+          >
+            Get started
+            <svg
+              class="ml-2 -mr-1 w-5 h-5"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
           </a>
-          <p class="my-6 text-gray-500 dark:text-gray-400">Open-source project that focuses on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
-          <ul class="flex flex-wrap justify-center items-center mb-6 text-gray-900 dark:text-white">
-            <li>
-              <a href="about.html" class="mr-4 hover:underline md:mr-6 ">About</a>
+        </div>
+      </div>
+    </section>
+    <!-- Add before footer so it stays on bottom-->
+    <footer class="p-4   md:p-8 lg:p-10 dark:bg-gray-800 reveal">
+      <div class="mx-auto max-w-screen-xl text-center">
+        <a
+          href="#"
+          class="flex justify-center items-center text-2xl font-semibold text-gray-900 dark:text-white"
+        >
+          <img src="assets/logo.png" class="mr-3 h-6 sm:h-9" alt="Ting Logo" />
+          <span
+            class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"
+          ></span>
+          Ying
+        </a>
+        <p class="my-6 text-gray-500 dark:text-gray-400">
+          Open-source project that focuses on markets where technology,
+          innovation, and capital can unlock long-term value and drive economic
+          growth.
+        </p>
+        <ul
+          class="flex flex-wrap justify-center items-center mb-6 text-gray-900 dark:text-white"
+        >
+          <li>
+            <a href="about.html" class="mr-4 hover:underline md:mr-6">About</a>
           </li>
           <li>
-              <a href="maintenance.html" class="mr-4 hover:underline md:mr-6">Premium</a>
+            <a href="maintenance.html" class="mr-4 hover:underline md:mr-6"
+              >Premium</a
+            >
           </li>
           <li>
-              <a href="maintenance.html" class="mr-4 hover:underline md:mr-6 ">Campaigns</a>
+            <a href="maintenance.html" class="mr-4 hover:underline md:mr-6"
+              >Campaigns</a
+            >
           </li>
           <li>
-              <a href="maintenance.html" class="mr-4 hover:underline md:mr-6">Blog</a>
+            <a href="maintenance.html" class="mr-4 hover:underline md:mr-6"
+              >Blog</a
+            >
           </li>
           <li>
-              <a href="maintenance.html" class="mr-4 hover:underline md:mr-6">Affiliate Program</a>
+            <a href="maintenance.html" class="mr-4 hover:underline md:mr-6"
+              >Affiliate Program</a
+            >
           </li>
           <li>
-              <a href="contact.html" class="mr-4 hover:underline md:mr-6">FAQs</a>
+            <a href="contact.html" class="mr-4 hover:underline md:mr-6">FAQs</a>
           </li>
           <li>
-              <a href="contact.html" class="mr-4 hover:underline md:mr-6">Contact</a>
+            <a href="contact.html" class="mr-4 hover:underline md:mr-6"
+              >Contact</a
+            >
           </li>
-          </ul>
-          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2019-2022 <a href="index.html" class="hover:underline">Ying™</a>. All Rights Reserved.</span>
+        </ul>
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
+          >© 2019-2022 <a href="index.html" class="hover:underline">Ying™</a>.
+          All Rights Reserved.</span
+        >
       </div>
     </footer>
   </body>
+
   <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/scroll.js"></script>
+  <script>
+    
+  </script>
 </html>
+
