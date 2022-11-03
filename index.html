@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ying</title>
+    <link rel="stylesheet" href="css/cursor.css">
     <link rel="stylesheet" href="css/index.css" />
     <link
       rel="stylesheet"
@@ -16,9 +17,11 @@
       sizes="any"
       type="image/svg+xml"
     />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   </head>
   <body class="bg-slate-500">
+
     <!-- Navbar-->
     <header class="nav-bar">
     <nav class=" border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-900">
@@ -44,7 +47,7 @@
             <span class="sr-only">Open user menu</span>
             <img
               class="w-8 h-8 rounded-full"
-              src="assets/user.png"
+              src="assets/user1.jpg"
               alt="user photo"
             />
           </button>
@@ -66,8 +69,8 @@
             <ul class="py-1" aria-labelledby="user-menu-button">
               <li>
                 <a
-                  href="#"
-                  class="cursor-not-allowed block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                  href="dashboard.html"
+                  class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
                   >Dashboard</a
                 >
               </li>
@@ -177,12 +180,9 @@
         <div class="logo"><b>Y<span>i</span>n<span>g</div>
       </h1>
       <br>
-      <p
-        class="mb-6 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-white reveal"
-      >
-        Here at Ying we focus on markets where technology, innovation, and
-        capital can unlock long-term value and drive economic growth.
-      </p>
+      <div class="container">
+        <p class="mb-6 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-white reveal">Ying is <span class="typed-text"></span><span>&nbsp;</span></p>
+      </div>
       <a
         href="about.html"
         class="reveal inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
@@ -204,7 +204,7 @@
     </center>
 
     <br />
-    <div class="flex justify-center reveal">
+    <div class="flex justify-center reveal" >
       <div
         class="w-full max-w-sm   rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"
       >
@@ -261,7 +261,7 @@
         <div class="flex flex-col items-center pb-10">
           <img
             class="mb-3 w-24 h-24 rounded-full shadow-lg"
-            src="assets/user.png"
+            src="assets/user1.jpg"
             alt="Bonnie image"
           />
           <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">
@@ -272,9 +272,9 @@
           >
           <div class="flex mt-4 space-x-3 md:mt-6">
             <a
-              href="maintenance.html"
+              href="dashboard.html"
               class="inline-flex items-center py-2 px-4 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-              >View User</a
+              >Edit Profile</a
             >
             <a
               href="maintenance.html"
@@ -282,7 +282,9 @@
               >Inbox</a
             >
           </div>
+          
         </div>
+        
       </div>
     </div>
     <!-- Sidebar here -->
@@ -292,6 +294,7 @@
 
     <br />
     <!-- Timeline -->
+    <br>
     <div class="flex justify-center">
       <ol class="items-center sm:flex">
         <li class="relative mb-6 sm:mb-0">
@@ -406,7 +409,7 @@
     </div>
 
     <br />
-    <section class="  dark:bg-[#64748B] reveal">
+    <section data-aos="fade-in" class="  dark:bg-[#64748B] reveal" >
       <div
         class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6"
       >
@@ -442,7 +445,7 @@
         </div>
       </div>
     </section>
-    <section class="  dark:bg-[#64748B] reveal">
+    <section data-aos="fade-in" class="  dark:bg-[#64748B] reveal">
       <div
         class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6"
       >
@@ -491,8 +494,8 @@
       </div>
     </section>
     <!-- Add before footer so it stays on bottom-->
-    <footer class="p-4   md:p-8 lg:p-10 dark:bg-gray-800 reveal">
-      <div class="mx-auto max-w-screen-xl text-center">
+    <footer  class="p-4   md:p-8 lg:p-10 dark:bg-gray-800 reveal">
+      <div data-aos="fade-in" class="mx-auto max-w-screen-xl text-center">
         <a
           href="#"
           class="flex justify-center items-center text-2xl font-semibold text-gray-900 dark:text-white"
@@ -549,13 +552,19 @@
         >
       </div>
     </footer>
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
   </body>
 
   <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
   <script src="js/main.js"></script>
   <script src="js/scroll.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="js/typing.js"></script>
   <script>
-    
+    AOS.init();
   </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/cursor.js"></script>
 </html>
 

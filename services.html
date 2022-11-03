@@ -10,6 +10,7 @@
       rel="stylesheet"
       href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       rel="icon"
       href="assets/braces.svg"
@@ -17,6 +18,7 @@
       type="image/svg+xml"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/cursor.css">
   </head>
   <body class="bg-slate-500	"">
     <!-- Navbar-->
@@ -46,7 +48,7 @@
             <span class="sr-only">Open user menu</span>
             <img
               class="w-8 h-8 rounded-full"
-              src="assets/user.png"
+              src="assets/user1.jpg"
               alt="user photo"
             />
           </button>
@@ -67,8 +69,8 @@
             <ul class="py-1" aria-labelledby="user-menu-button">
               <li>
                 <a
-                  href="#"
-                  class="cursor-not-allowed block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                  href="dashboard.html"
+                  class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
                   >Dashboard</a
                 >
               </li>
@@ -238,9 +240,9 @@
                   Post comment
               </button>
           </form>
-          <article class="p-6 mb-6 text-base bg-white rounded-lg dark:bg-gray-900">
+          <article data-aos="fade-in" class="p-6 mb-6 text-base bg-white rounded-lg dark:bg-gray-900">
               <footer class="flex justify-between items-center mb-2">
-                  <div class="flex items-center">
+                  <div data-aos="fade-in" class="flex items-center">
                       <p class="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white"><img
                               class="mr-2 w-6 h-6 rounded-full"
                               src="https://flowbite.com/docs/images/people/profile-picture-2.jpg"
@@ -260,7 +262,7 @@
                       <span class="sr-only">Comment settings</span>
                   </button>
                   <!-- Dropdown menu -->
-                  <div id="dropdownComment1"
+                  <div  id="dropdownComment1"
                       class="hidden z-10 w-36 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600">
                       <ul class="py-1 text-sm text-gray-700 dark:text-gray-200"
                           aria-labelledby="dropdownMenuIconHorizontalButton">
@@ -290,12 +292,12 @@
                   </button>
               </div>
           </article>
-          <article class="p-6 mb-6 ml-6 lg:ml-12 text-base bg-white rounded-lg dark:bg-gray-900">
+          <article data-aos="fade-in" class="p-6 mb-6 ml-6 lg:ml-12 text-base bg-white rounded-lg dark:bg-gray-900">
               <footer class="flex justify-between items-center mb-2">
                   <div class="flex items-center">
                       <p class="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white"><img
                               class="mr-2 w-6 h-6 rounded-full"
-                              src="assets/user.png"
+                              src="assets/user1.jpg"
                               alt="Gjin Prelvukaj">Gjin Prelvukaj</p>
                       <p class="text-sm text-gray-600 dark:text-gray-400"><time pubdate datetime="2022-02-12"
                               title="February 12th, 2022">Oct. 19, 2022</time></p>
@@ -340,7 +342,7 @@
                   </button>
               </div>
           </article>
-          <article class="p-6 mb-6 text-base bg-white border-t border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+          <article data-aos="fade-in" class="p-6 mb-6 text-base bg-white border-t border-gray-200 dark:border-gray-700 dark:bg-gray-900">
               <footer class="flex justify-between items-center mb-2">
                   <div class="flex items-center">
                       <p class="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white"><img
@@ -390,7 +392,7 @@
                   </button>
               </div>
           </article>
-          <article class="p-6 text-base bg-white border-t border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+          <article data-aos="fade-in" class="p-6 text-base bg-white border-t border-gray-200 dark:border-gray-700 dark:bg-gray-900">
               <footer class="flex justify-between items-center mb-2">
                   <div class="flex items-center">
                       <p class="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white"><img
@@ -442,7 +444,7 @@
         </div>
       </section>
     <!-- Add before footer so it stays on bottom-->
-    <footer class="p-4 bg-white md:p-8 lg:p-10 dark:bg-gray-800">
+    <footer data-aos="fade-in" class="p-4 bg-white md:p-8 lg:p-10 dark:bg-gray-800">
         <div class="mx-auto max-w-screen-xl text-center">
             <a href="#" class="flex justify-center items-center text-2xl font-semibold text-gray-900 dark:text-white">
                     <img src="assets/logo.png" class="mr-3 h-6 sm:h-9" alt="Ting Logo" />
@@ -479,7 +481,14 @@
             <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2019-2022 <a href="index.html" class="hover:underline">Ying™</a>. All Rights Reserved.</span>
         </div>
       </footer>
+      <div class="cursor"></div>
+      <div class="cursor2"></div>
   </body>
   <script src="js/scroll.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+  <script src="js/cursor.js"></script>
 </html>

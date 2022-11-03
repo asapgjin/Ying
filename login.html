@@ -17,6 +17,8 @@
       type="image/svg+xml"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/cursor.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body class="bg-slate-500">
     <!-- Navbar-->
@@ -126,7 +128,7 @@
     </section>
     <!-- Add before footer so it stays on bottom-->
     <footer class="p-4 md:p-8 lg:p-10 dark:bg-gray-800 reveal">
-      <div class="mx-auto max-w-screen-xl text-center">
+      <div data-aos="fade-in" class="mx-auto max-w-screen-xl text-center">
         <a
           href="#"
           class="flex justify-center items-center text-2xl font-semibold text-gray-900 dark:text-white"
@@ -183,10 +185,16 @@
         >
       </div>
     </footer>
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
   </body>
 
   <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
   <script src="js/main.js"></script>
   <script src="js/scroll.js"></script>
-  <script></script>
+  <script src="js/cursor.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </html>

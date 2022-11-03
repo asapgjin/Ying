@@ -10,6 +10,7 @@
       rel="stylesheet"
       href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       rel="icon"
       href="assets/braces.svg"
@@ -17,6 +18,7 @@
       type="image/svg+xml"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/cursor.css">
   </head>
   <body class="bg-slate-500	">
     <!-- Navbar-->
@@ -46,7 +48,7 @@
             <span class="sr-only">Open user menu</span>
             <img
               class="w-8 h-8 rounded-full"
-              src="assets/user.png"
+              src="assets/user1.jpg"
               alt="user photo"
             />
           </button>
@@ -67,8 +69,8 @@
             <ul class="py-1" aria-labelledby="user-menu-button">
               <li>
                 <a
-                  href="#"
-                  class="cursor-not-allowed block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                  href="dashboard.html"
+                  class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
                   >Dashboard</a
                 >
               </li>
@@ -191,10 +193,10 @@
         </div>
       </section>
       <br>
-      <section class="bg-white dark:bg-gray-900" >
+      <section  class="bg-white dark:bg-gray-900" >
         <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
             <h2 class="mb-8 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Frequently asked questions</h2>
-            <div class="grid pt-8 text-left border-t border-gray-200 md:gap-16 dark:border-gray-700 md:grid-cols-2">
+            <div data-aos="fade-in" class="grid pt-8 text-left border-t border-gray-200 md:gap-16 dark:border-gray-700 md:grid-cols-2">
                 <div>
                     <div class="mb-10">
                         <h3 class="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white">
@@ -265,8 +267,8 @@
         </div>
       </section>
     <!-- Add before footer so it stays on bottom-->
-    <footer class="p-4 bg-white md:p-8 lg:p-10 dark:bg-gray-800">
-        <div class="mx-auto max-w-screen-xl text-center">
+    <footer  class="p-4 bg-white md:p-8 lg:p-10 dark:bg-gray-800">
+        <div data-aos="fade-in" class="mx-auto max-w-screen-xl text-center">
             <a href="#" class="flex justify-center items-center text-2xl font-semibold text-gray-900 dark:text-white">
                     <img src="assets/logo.png" class="mr-3 h-6 sm:h-9" alt="Ting Logo" />
                     <span
@@ -303,7 +305,14 @@
             <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2019-2022 <a href="index.html" class="hover:underline">Ying™</a>. All Rights Reserved.</span>
         </div>
       </footer>
+      <div class="cursor"></div>
+      <div class="cursor2"></div>
   </body>
   <script src="js/scroll.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+  <script src="js/cursor.js"></script>s
 </html>

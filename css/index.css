@@ -75,3 +75,29 @@ header {
 header .nav-bar {
   position: relative;
 }
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+.container p span.typed-text {
+  font-weight: normal;
+  color: #dd7732;
+}
+.container p span.cursor.typing {
+  animation: none;
+}
+@keyframes type {
+  0% {
+    background-color: #ccc;
+  }
+  49% {
+    background-color: #ccc;
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #ccc;
+  }
+}

@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+* {
+  cursor: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cursor {
+  z-index: 999;
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  border: 1px solid white;
+  transition: all 200ms ease-out;
+  position: fixed;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+  transform: translate(calc(-50% + 15px), -50%);
+}
+
+.cursor2 {
+  z-index: 999;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background-color: white;
+  opacity: 100;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: width 0.3s, height 0.3s, opacity 0.3s;
+}
+
+.cursorinnerhover {
+  z-index: 999;
+  width: 45px;
+  height: 45px;
+  opacity: 0.5;
+}
