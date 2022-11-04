@@ -1,6 +1,6 @@
 # Ying
 
-Creator : Gjin Prelvukaj
+# Creator : Gjin Prelvukaj
 <br>
 A website made for Digital School November Code Fest
 <br>
