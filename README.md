@@ -1,6 +1,7 @@
-# Demo
+# Ying
 
 Creator : Gjin Prelvukaj
+<br>
 A website made for Digital School November Code Fest
 Website uses Tailwind and Flowbite
 Its made by HTML , CSS (Tailwind / Flowbite) And JS (jQuery and Tilt.js)
