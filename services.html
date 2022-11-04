@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ying</title>
+    
     <link rel="stylesheet" href="css/index.css">
     <link
       rel="stylesheet"
@@ -19,6 +20,7 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/cursor.css">
+    <link rel="stylesheet" href="css/services-images.css">
   </head>
   <body class="bg-slate-500	"">
     <!-- Navbar-->
@@ -223,6 +225,73 @@
             </div>
         </div>
       </section>
+      
+      <div class="dark:bg-gray-900">
+        <p class="mb-2 text-6xl	 font-bold dark:text-white text-center">Recent Project</p>
+        <br>
+    <center><div class="options">
+        <div class="option active" style="--optionBackground:url(https://64.media.tumblr.com/ca5126b1e2b423b9201e8be8ac313453/dea099dbbc0fb249-cc/s540x810/b98802f4fc22f36ea31d3961e28efa855b6696dd.pnj);">
+           <div class="shadow"></div>
+           <div class="label">
+              <div class="icon">
+                 <i class="fas fa-sun"></i>
+              </div><div class="info">
+                 <div class="main">Style Watch HO</div>
+                 <div class="sub">Creator: Gjin Prelvukaj</div>
+              </div>
+           </div>
+        </div>
+        <div class="option" style="--optionBackground:url(https://64.media.tumblr.com/b83d82ed968d5a66503876dd087ba5c2/3db99235bf8cbea5-f1/s540x810/aa86fde2a2097505396255df4f60411ead9d5d2d.pnj);">
+           <div class="shadow"></div>
+           <div class="label">
+              <div class="icon">
+                 <i class="fas fa-sun"></i>
+              </div>
+              <div class="info">
+                 <div class="main">Style Watch HO</div>
+                 <div class="sub">Creator: Gjin Prelvukaj</div>
+              </div>
+           </div>
+        </div>
+        <div class="option" style="--optionBackground:url(https://64.media.tumblr.com/b83d82ed968d5a66503876dd087ba5c2/3db99235bf8cbea5-f1/s540x810/aa86fde2a2097505396255df4f60411ead9d5d2d.pnj);">
+           <div class="shadow"></div>
+           <div class="label">
+              <div class="icon">
+                 <i class="fas fa-sun"></i>
+              </div>
+              <div class="info">
+                 <div class="main">GO BIG</div>
+                 <div class="sub">Creator: Gjin Prelvukaj</div>
+              </div>
+           </div>
+        </div>
+        <div class="option" style="--optionBackground:url(https://64.media.tumblr.com/1de425b89e4332b859072cadec4649fe/fe26ba1bd95d7d51-4d/s640x960/30cdf3d4d73cd433af8bd967571dfce44b4d96b2.pnj);">
+           <div class="shadow"></div>
+           <div class="label">
+              <div class="icon">
+                 <i class="fas fa-sun"></i>
+              </div>
+              <div class="info">
+                 <div class="main">Delicious</div>
+                 <div class="sub">Creator: Gjin Prelvukaj</div>
+              </div>
+           </div>
+        </div>
+        <div class="option" style="--optionBackground:url(https://64.media.tumblr.com/08505ef0454f0effd48ab391b8a3d6f5/7ecbe76d90a879de-df/s540x810/28fd2833106b1d7f56af325ffc63c25e70109dc8.pnj);">
+           <div class="shadow"></div>
+           <div class="label">
+              <div class="icon">
+                 <i class="fas fa-sun"></i>
+              </div>
+              <div class="info">
+                 <div class="main">Travelogue Theme</div>
+                 <div class="sub">Creator: Gjin Prelvukaj</div>
+              </div>
+           </div>
+        </div>
+     </div></center>
+    </div>
+     
       <section class="bg-white dark:bg-gray-900 py-8 lg:py-16">
         <div class="max-w-2xl mx-auto px-4">
             <div class="flex justify-between items-center mb-6">
@@ -491,4 +560,15 @@
   </script>
   <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
   <script src="js/cursor.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+  crossorigin="anonymous"></script>
+  <script>
+$(".option").click(function () {
+   $(".option").removeClass("active");
+   $(this).addClass("active");
+});
+
+  </script>
 </html>

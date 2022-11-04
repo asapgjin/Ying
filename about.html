@@ -180,11 +180,12 @@
                 <p class="font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-[#FFFFFF]">Explore and get to know the team which made Ying a open-source project and made it easy for people to access</p>
             </div> 
             <div class="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
+              <span data-tilt class="tilt">
                 <div class="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
                     <a href="#">
                         <img class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg" src="assets/user1.jpg" alt="Gjin Prelvukaj">
                     </a>
-                    <div class="p-5">
+                    <div class="p-5" >
                         <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
                             <a href="#">Gjin Prelvukaj</a>
                         </h3>
@@ -214,6 +215,8 @@
                         </ul>
                     </div>
                 </div> 
+              </span>
+              <span data-tilt class="tilt">
                 <div class="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
                     <a href="#">
                         <img class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg" src="assets/user1.jpg" alt="Lis Shala">
@@ -248,6 +251,7 @@
                         </ul>
                     </div>
                 </div> 
+              </span>
  
             </div>  
             <center><hr style="width: 250px"></center>
@@ -380,12 +384,25 @@
       </footer>
       <div class="cursor"></div>
       <div class="cursor2"></div>
+      <script src="js/scroll.js"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+      <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+      <script src="js/cursor.js"></script>
+      <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"></script>
+    </script>
+    <script src="js/tilt.jquery.js"></script>
+    <script>
+$('.tilt').tilt({
+    scale: 1,
+    perspective: 1000
+})
+    </script>
+      
   </body>
-  <script src="js/scroll.js"></script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-  <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
-  <script src="js/cursor.js"></script>
 </html>
